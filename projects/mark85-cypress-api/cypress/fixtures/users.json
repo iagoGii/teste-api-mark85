@@ -1,0 +1,16 @@
+{
+    "login": {
+        "name": "James Software user",
+        "email": "jamesuser@hotmail.com",
+        "password": "james123"
+    },
+    "inv_pass":{
+        "email": "james.sf@hotmail.com",
+        "password": "1234556"
+    },
+    "email_404":{
+        "email": "james.sfzz@hotmail.com",
+        "password": "1234556"
+    }
+
+}
