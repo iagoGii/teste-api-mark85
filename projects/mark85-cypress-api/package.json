@@ -1,0 +1,22 @@
+{
+  "name": "mark85-cypress-api",
+  "version": "1.0.0",
+  "description": "Projeto de testes de API do Mark85",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "keywords": [
+    "Cypress",
+    "api",
+    "javascript",
+    "mongodb",
+    "rabbimq",
+    "postman"
+  ],
+  "author": "Iago Oliveira Guedes",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  }
+}
