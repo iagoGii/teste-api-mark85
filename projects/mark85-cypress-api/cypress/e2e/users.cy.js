@@ -6,8 +6,8 @@ describe('POST /users', () => {
 
     //Massa de teste que vai ser utilizada para realização da requisição
     const user = {
-      name: 'James Gunn Teste',
-      email: 'james@hotmail.com',
+      name: 'James Software',
+      email: 'james.sf@hotmail.com',
       password: 'james123'
     }
 
