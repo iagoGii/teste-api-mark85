@@ -1,0 +1,19 @@
+{
+  "name": "jaiminho-mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
+    "faker": "^6.6.6",
+    "nodemailer": "^6.9.2",
+    "nodemon": "^2.0.22"
+  }
+}
