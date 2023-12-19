@@ -1,9 +1,9 @@
 
 # Projeto de automação API-REST com Cypress, MongoDB e RabbitMQ
 
-Projeto visa testar e automatizar API com cypress utilizando a fila de mensajería do RabbitMQ quando é adicionado alguma tarefa no site então é enviado para a fila de mensajería.
+Projeto visa testar e automatizar API com cypress utilizando a fila de mensageiria do RabbitMQ quando é adicionado alguma tarefa no site então é enviado para a fila de mensageiria.
 
-Utilização do banco de dados MongoDB para visualização dos dados criados através da automação, podendo assim, editar, selecionar dados e visualizar todos recursos que está sendo recebido via banco.
+Utilização do banco de dados MongoDB para visualização dos dados criados através da automação, podendo assim, editar, selecionar dados e visualizar todos os recursos que está sendo recebido via banco.
 
 Automação da API-REST está sendo executada e desenvolvida com Cypress.
 
