@@ -11,6 +11,22 @@
     "email_404":{
         "email": "james.sfzz@hotmail.com",
         "password": "1234556"
+    },
+    "create":{
+        "name": "James Software",
+        "email": "james.sf@hotmail.com",
+        "password": "james123"
+    },
+    "dup_email":{
+        "name": "James Gunn",
+        "email": "jamesgunn@hotmail.com",
+        "password": "james333"
+    },
+    "required":{
+        "name": "Margot Robbie",
+        "email": "margot@gmail.com",
+        "password": "pwd123"
     }
+
 
 }

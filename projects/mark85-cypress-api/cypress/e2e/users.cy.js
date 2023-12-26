@@ -2,14 +2,16 @@
 
 describe('POST /users', () => {
 
-  it('register a new user', () => {
+  beforeEach(function () {
+    cy.fixture('users').then(function (users) {
+      this.users = users
+    })
+  })
+
+  it('register a new user', function () {
 
     //Massa de teste que vai ser utilizada para realização da requisição
-    const user = {
-      name: 'James Software',
-      email: 'james.sf@hotmail.com',
-      password: 'james123'
-    }
+    const user = this.users.create
 
     //Realiza a exclusão do email cadastrado via API, configurado via banco de dados, busca no banco e realiza a exclusão.
     cy.task('deleteUser', user.email)
@@ -22,13 +24,9 @@ describe('POST /users', () => {
 
   })
 
-  it('Duplicate email', () => {
+  it('Duplicate email', function () {
 
-    const user = {
-      name: 'James Gunn',
-      email: 'jamesgunn@hotmail.com',
-      password: 'james333'
-    }
+    const user = this.users.dup_email
 
     cy.task('deleteUser', user.email)
 
@@ -45,20 +43,16 @@ describe('POST /users', () => {
 
   })
 
-  context('Required fields', () => {
+  context('Required fields', function () {
 
     // beforeEach é um gancho onde reinicia a massa de teste e realiza a devida automação conforme descrit nos cenários. 
     let user;
 
-    beforeEach(() => {
-      user = {
-        name: 'Margot Robbie',
-        email: 'margot@gmail.com',
-        password: 'pwd123'
-      }
+    beforeEach(function () {
+      user = this.users.required
     })
 
-    it('name is required', () => {
+    it('name is required', function () {
 
       delete user.name
 
@@ -72,7 +66,7 @@ describe('POST /users', () => {
         })
     })
 
-    it('email is required', () => {
+    it('email is required', function () {
 
       delete user.email
 
@@ -86,7 +80,7 @@ describe('POST /users', () => {
         })
     })
 
-    it('password is required', () => {
+    it('password is required', function () {
 
       delete user.password
 
