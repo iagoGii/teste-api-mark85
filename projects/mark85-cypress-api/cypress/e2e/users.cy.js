@@ -14,12 +14,12 @@ describe('POST /users', () => {
     const user = this.users.create
 
     //Realiza a exclusão do email cadastrado via API, configurado via banco de dados, busca no banco e realiza a exclusão.
-    cy.task('deleteUser', user.email)
+    cy.task('removeUser', user.email)
 
     //encapsulamento da requisição POST
     cy.postUser(user)
       .then(response => {
-        expect(response.status).to.eq(200)
+        expect(response.status).to.eq(201)
       })
 
   })
@@ -28,7 +28,7 @@ describe('POST /users', () => {
 
     const user = this.users.dup_email
 
-    cy.task('deleteUser', user.email)
+    cy.task('removeUser', user.email)
 
     cy.postUser(user)
 

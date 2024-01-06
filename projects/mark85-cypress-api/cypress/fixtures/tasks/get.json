@@ -1,0 +1,59 @@
+{
+    "list": {
+        "user": {
+            "name": "Charles Xavier",
+            "email": "xavier@xavier.com",
+            "password": "pwd123"
+        },
+        "tasks": [
+            {
+                "name": "Estud4r JavaScript",
+                "tags": [
+                    "QAx"
+                ]
+            },
+            {
+                "name": "Estud4r TypeScript",
+                "tags": [
+                    "TypeScript",
+                    "ts"
+                ]
+            },
+            {
+                "name": "Estud4r Cypress",
+                "tags": [
+                    "Cypress",
+                    "JavaScirpt",
+                    "NodeJs"
+                ]
+            }
+        ]
+    },
+
+    "unique": {
+        "user": {
+            "name": "Tony Stark",
+            "email": "tony@tony.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Construir a Mark87",
+            "tags": [
+                "ark",
+                "nanotech",
+                "friday"
+            ]
+        }
+    },
+
+    "not_found": {
+        "user": {
+            "name": "Bruce Banner",
+            "email": "bruce@tony.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Construir uma maquina de radiação gama"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "remove": {
+        "user": {
+            "name": "Peter Parker",
+            "email": "peter@peter.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Construir o lança teia",
+            "tags": [
+                "ark",
+                "nanotech",
+                "teia"
+            ]
+        }
+    },
+
+    "not_found": {
+        "user": {
+            "name": "Bruce Wayner",
+            "email": "bruce@wayne.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Construir uma nova armadura"
+        }
+    }
+}

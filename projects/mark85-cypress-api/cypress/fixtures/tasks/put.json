@@ -1,0 +1,27 @@
+{
+    "update": {
+        "user": {
+            "name": "Steve Jobs",
+            "email": "steve@steve.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Denição de técnica de arquitetura",
+            "tags": [
+                "x86",
+                "unix"
+            ]
+        }
+    },
+
+    "not_found": {
+        "user": {
+            "name": "Steve Woz",
+            "email": "steve@woz.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Construir o primeiro Apple"
+        }
+    }
+}

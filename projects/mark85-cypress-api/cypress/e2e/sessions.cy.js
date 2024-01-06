@@ -10,7 +10,7 @@ describe('POST /sessions', () => {
 
         const userData = this.users.login
 
-        cy.task('deleteUser', userData.email)
+        cy.task('removeUser', userData.email)
         cy.postUser(userData)
 
         cy.postSession(userData)
