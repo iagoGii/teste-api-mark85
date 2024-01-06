@@ -17,6 +17,7 @@
   "author": "Iago Oliveira Guedes",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.1",
     "cypress": "^13.6.1",
     "cypress-plugin-api": "^2.11.1",
     "mongodb": "^6.3.0"

@@ -2,10 +2,13 @@ const { defineConfig } = require("cypress");
 
 const { connect } = require('./cypress/support/mongo')
 
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+
 module.exports = defineConfig({
   e2e: {
     async setupNodeEvents(on, config) {
       // implement node event listeners here
+      allureWriter(on, config);
 
       const db = await connect()
 
@@ -29,6 +32,8 @@ module.exports = defineConfig({
           return null
         }
       })
+
+      return config
     },
     baseUrl: 'http://localhost:3333'
   },
